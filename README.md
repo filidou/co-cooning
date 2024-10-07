@@ -1,6 +1,8 @@
 # Co-cooning
 
 ### The code is provided in the master branch
+### The presentation is uploaded, but also you can find it in the link bellow (presentation in pdf)
+"https://drive.google.com/file/d/1HF5ocoWay7HA2Fp5vvdJt6z0wjDYBWsI/view?usp=sharing"
 
 ## Description of Co – cooning
 The Co-cooning model is designed to assist users in selecting movies or series based on their preferences, simplifying the often difficult decision-making process. By offering personalized recommendations from a wide range of options, it encourages users to unwind and enjoy a relaxed viewing experience. The name "Co-cooning" reflects its role as a companion in helping users embrace the comfort of cocooning—settling in for a cozy, stress-free movie or series session.
