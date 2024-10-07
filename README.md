@@ -13,11 +13,11 @@ The domain of Co-cooning focuses on movie and series recommendation. It asks whe
 
 ## Features
 Co-cooning offers an easy-to-use interface that simplifies the process of selecting movies or series. It provides customized suggestions based on user input, specifically focusing on genre and release year, to tailor recommendations to individual preferences. With its streamlined decision-making process, the bot helps users quickly find something to watch, reducing the time spent searching and maximizing relaxation.
-Installation
+## Installation
 To install and run the Co-cooning bot locally, follow these steps:
-A.	Clone the repository
-B.	Install the dependencies:
-pip install -r requirements.txt
+  - A.	Clone the repository
+  - B.	Install the dependencies:
+  - pip install -r requirements.txt
 
 C.	Run the chatbot:
 rasa run actions
