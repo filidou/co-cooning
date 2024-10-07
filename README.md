@@ -85,6 +85,9 @@ Challenge with series recommendation
 -	Form: series_recommendation_form captures location details and stores them in the slots
 -	Action: action_recommend_series
 
+If no match is found, the bot will send a fallback message to the user to inform them that no recommendation is available at the moment. This is implemented in both actions
+"Sorry, I couldn't find a TV series/movie recommendation at the moment."
+
 ## Forms
 
 movie_recommendation_form: It gathers information about the movie user want to see. It uses for that purpose two slots release_year, movie_genre
@@ -96,18 +99,24 @@ Implementing the solution for the policy was particularly challenging. It requir
 ## Test cases
 Movies scenario: 
 - User’s input (hi) > Hello Co-cooning is here for you! How can I assist you in finding a movie or TV series? User’s input (movie) > What genre of movies do you prefer?
-- User’s input (drama)> What is yor preferred release year ?                                                                                                            - User’s input (2002)> I recommend you watch Drama Queen. It's a Drama movie from 2002, rated 3.2 on IMDb!                                                              - User’s input (bye)> Goodbye and always remember: Get Cozy, Cocoon Up, and Press Play!
+- User’s input (drama)> What is yor preferred release year ?                                                            - User’s input (2002)> I recommend you watch Drama Queen. It's a Drama movie from 2002, rated 3.2 on IMDb!              - User’s input (bye)> Goodbye and always remember: Get Cozy, Cocoon Up, and Press Play!
 Series scenario: 
-- User’s input (good morning)> Hello Co-cooning is here for you! How can I assist you in finding a movie or TV series?                                                  - User’s input (series) > What genre of series do you prefer?
-- User’s input (drama)> What is yor preferred release year ?                                                                                                            - User’s input (2010)> I recommend you watch Total Drama World Tour. It's a Drama series from 2010–, rated N/A on IMDb!
+- User’s input (good morning)> Hello Co-cooning is here for you! How can I assist you in finding a movie or TV series?  - User’s input (series) > What genre of series do you prefer?
+- User’s input (drama)> What is yor preferred release year ?                                                            - User’s input (2010)> I recommend you watch Total Drama World Tour. It's a Drama series from 2010–, rated N/A on IMDb!
 Challenge scenario: 
 - User’s input (are you a bot) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?                           - User’s input (fu) > I may be just a bot, but challenging me was a mistake. No movies or series for you. Prepare to face my wrath!
 Goodbye and always remember: Get Cozy, Cocoon Up, and Press Play!
 
 Movies scenario with challenge: 
-- User’s input (are you a bot) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?                                                                                                                                                      User’s input (series) > movies scenario
+- User’s input (are you a bot) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?                                                                                          - User’s input (series) > movies scenario
 Series scenario with challenge: 
-- User’s input (are you a human) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?                                                                                                                                                      User’s input (series) > series scenario
+- User’s input (are you a human) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?                                                                                          - User’s input (series) > series scenario
+
+No match found
+Your input (i want to watch a tv series) > What genre of TV series do you prefer?
+Your input (sci-fi) > What is yor preferred release year ?
+Your input (2001) > Sorry, I couldn't find a TV series recommendation at the moment.
+
 ## Challenges
 Throughout the development of Co-cooning, I encountered several challenges that tested the bot's design and functionality. One significant hurdle was implementing a "sad path" story that included an utter rage response. This approach ran into issues due to contradictions between the defined stories and the rules governing the chatbot's behavior. The conflicting interactions created confusion in the flow, making it difficult for the bot to respond appropriately. 
 For the sad path, I initially set up the bot challenge using a rule because I found it computationally efficient. However, when I wanted to create a scenario where the conversation would stop after the bot challenge to avoid looping, I encountered issues. As a result, I ended up creating three additional scenarios to cover all possible outcomes."
