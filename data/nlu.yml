@@ -1,0 +1,344 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - aloha
+    - Hey
+    - Hello
+    - Hi
+    - Hello there
+    - Good morning
+    - Good evening
+    - Moin
+    - Hey there
+    - Let's go
+    - Hey dude
+    - Goodmorning
+    - Goodevening
+    - Good afternoon
+    - Aloha
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Cu
+    - Good by
+    - Cee you later
+    - Good night
+    - Bye
+    - Goodbye
+    - Have a nice day
+    - See you around
+    - Bye bye
+    - See you later
+    - See you later aligator
+    - see you later aligator
+
+- intent: ask_movie_recommendation
+  examples: |
+    - Can you recommend a movie?
+    - Can you recommend a movie
+    - can you recommend a movie?
+    - can you recommend a movie
+    - Suggest me a movie to watch
+    - suggest me a movie to watch
+    - What movie should I watch?
+    - What movie should I watch
+    - what movie should I watch?
+    - what movie should I watch
+    - Recommend a good movie
+    - recommend a good movie
+    - I want a movie recommendation
+    - i want a movie recommendation
+    - Suggest a movie for tonight
+    - suggest a movie for tonight
+    - Could you recommend a movie?
+    - Could you recommend a movie
+    - could you recommend a movie?
+    - could you recommend a movie
+    - Give me a movie suggestion
+    - give me a movie suggestion
+    - I need a movie to watch
+    - i need a movie to watch
+    - I want to watch a movie
+    - i want to watch a movie
+    - Can you suggest a good movie?
+    - Can you suggest a good movie
+    - can you suggest a good movie?
+    - can you suggest a good movie
+    - What movie should I check out?
+    - What movie should I check out
+    - what movie should I check out?
+    - what movie should I check out
+    - Do you have a movie recommendation?
+    - Do you have a movie recommendation
+    - do you have a movie recommendation?
+    - do you have a movie recommendation
+    - movie
+    - Movie
+    - movies
+    - Movies
+    - movie recommendation
+    - Movie recommendation
+
+- intent: ask_series_recommendation
+  examples: |
+    - Can you recommend a TV series?
+    - Can you recommend a TV series
+    - can you recommend a TV series?
+    - can you recommend a TV series
+    - Can you recommend a tv series?
+    - Can you recommend a tv series
+    - can you recommend a tv series?
+    - can you recommend a tv series    
+    - Suggest me a series to watch
+    - suggest me a series to watch
+    - What series should I watch?
+    - What series should I watch
+    - what series should I watch?
+    - what series should I watch
+    - Recommend a good series
+    - recommend a good series
+    - Can you recommend a show to binge-watch?
+    - Can you recommend a show to binge-watch
+    - can you recommend a show to binge-watch?
+    - can you recommend a show to binge-watch
+    - recommend a show to binge-watch
+    - Recommend a show to binge-watch
+    - Recommend series
+    - recommend series
+    - Suggest a TV show for me
+    - suggest a TV show for me
+    - Suggest a tv show for me
+    - suggest a tv show for me
+    - I need a series recommendation
+    - i need a series recommendation
+    - I want to watch a TV series
+    - i want to watch a TV series
+    - I want to watch a tv series
+    - i want to watch a tv series
+    - What TV series should I check out?
+    - what TV series should I check out?
+    - What TV series should I check out
+    - what TV series should I check out
+    - Can you suggest a show for me to watch?
+    - can you suggest a show for me to watch?
+    - Can you suggest a show for me to watch
+    - can you suggest a show for me to watch
+    - Recommend a good TV series for the weekend
+    - recommend a good TV series for the weekend
+    - Do you have a series suggestion for me?
+    - Do you have a series suggestion for me
+    - do you have a series suggestion for me?
+    - do you have a series suggestion for me
+    - series
+    - Series
+    - tv series
+    - TV series
+
+- intent: inform
+  examples: |
+    - I like [action](genre) movies
+    - i like [action](genre) movies
+    - I prefer [action](genre) movies
+    - i prefer [action](genre) movies
+    - I like [adventure](genre) movies
+    - i like [adventure](genre) movies
+    - I prefer [adventure](genre) movies
+    - i prefer [adventure](genre) movies
+    - I like [dramas](genre) movies
+    - i like [dramas](genre) movies
+    - I prefer [dramas](genre) movies
+    - i prefer [dramas](genre) movies
+     - I like [animation](genre) movies
+    - i like [animation](genre) movies
+    - I prefer [animation](genre) movies
+    - i prefer [animation](genre) movies
+    - I like [biography](genre) movies
+    - i like [biography](genre) movies
+    - I prefer [biography](genre) movies
+    - i prefer [biography](genre) movies
+    - I like [crime](genre) movies
+    - i like [crime](genre) movies
+    - I prefer [crime](genre) movies
+    - i prefer [crime](genre) movies
+    - I like [documentary](genre) movies
+    - i like [documentary](genre) movies
+    - I prefer [documentary](genre) movies
+    - i prefer [documentary](genre) movies
+    - I like [family](genre) movies
+    - i like [family](genre) movies
+    - I prefer [family](genre) movies
+    - i prefer [family](genre) movies
+    - I like [fantasy](genre) movies
+    - i like [fantasy](genre) movies
+    - I prefer [fantasy](genre) movies
+    - i prefer [fantasy](genre) movies
+    - I like [film-noir](genre) movies
+    - i like [film-noir](genre) movies
+    - I prefer [film-noir](genre) movies
+    - i prefer [film-noir](genre) movies
+    - I like [history](genre) movies
+    - i like [history](genre) movies
+    - I prefer [history](genre) movies
+    - i prefer [history](genre) movies
+    - I like [music](genre) movies
+    - i like [music](genre) movies
+    - I prefer [music](genre) movies
+    - i prefer [music](genre) movies
+    - I like [musical](genre) movies
+    - i like [musical](genre) movies
+    - I prefer [musical](genre) movies
+    - i prefer [musical](genre) movies
+    - I like [mystery](genre) movies
+    - i like [mystery](genre) movies
+    - I prefer [mystery](genre) movies
+    - i prefer [mystery](genre) movies
+    - I like [romance](genre) movies
+    - i like [romance](genre) movies
+    - I prefer [romance](genre) movies
+    - i prefer [romance](genre) movies
+    - I like [sci-fi](genre) movies
+    - i like [sci-fi](genre) movies
+    - I prefer [sci-fi](genre) movies
+    - i prefer [sci-fi](genre) movies
+    - I like [sport](genre) movies
+    - i like [sport](genre) movies
+    - I prefer [sport](genre) movies
+    - i prefer [sport](genre) movies
+    - I like [thriller](genre) movies
+    - i like [thriller](genre) movies
+    - I prefer [thriller](genre) movies
+    - i prefer [thriller](genre) movies
+    - I like [war](genre) movies
+    - i like [war](genre) movies
+    - I prefer [war](genre) movies
+    - i prefer [war](genre) movies
+    - I like [western](genre) movies
+    - i like [western](genre) movies
+    - I prefer [western](genre) movies
+    - i prefer [western](genre) movies
+    - [Action](genre)
+    - [Horror](genre)
+    - [Drama](genre)
+    - [Comedy](genre)
+    - [Adventure](genre)
+    - [Animation](genre)
+    - [Biography](genre)
+    - [Crime](genre)
+    - [Documentary](genre)
+    - [Family](genre)
+    - [Fantasy](genre)
+    - [Film-Noir](genre)
+    - [History](genre)
+    - [Music](genre)
+    - [Musical](genre)
+    - [Mystery](genre)
+    - [Romance](genre)
+    - [Sci-Fi](genre)
+    - [Sport](genre)
+    - [Thriller](genre)
+    - [War](genre)
+    - [Western](genre)
+    - [horror](genre)
+    - [drama](genre)
+    - [comedy](genre)
+    - [adventure](genre)
+    - [animation](genre)
+    - [biography](genre)
+    - [crime](genre)
+    - [documentary](genre)
+    - [family](genre)
+    - [fantasy](genre)
+    - [film-noir](genre)
+    - [history](genre)
+    - [music](genre)
+    - [musical](genre)
+    - [mystery](genre)
+    - [romance](genre)
+    - [sci-fi](genre)
+    - [sport](genre)
+    - [thriller](genre)
+    - [war](genre)
+    - [western](genre)
+    - I want to watch a movie from [2020](release_year)
+    - How about a movie from the [90s](release_year)?
+    - Can you find a movie from [2022](release_year)?
+    - How about a [drama](genre) from [2010](release_year)?
+    - Find me a series from [2021](release_year)
+    - Something from [2019](release_year)
+    - I want an action movie from [2020](release_year)
+    - [1999](release_year)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a bot
+    - are you a human
+    - am I talking to a bot
+    - am I talking to a human
+    - Are you a bot
+    - Are you a human
+    - Am I talking to a bot
+    - Am I talking to a human
+    - Are you a bot?
+    - Are you a human?
+    - Am I talking to a bot?
+    - Am I talking to a human?
+    - fu
+    - FU
+    - fuck off
+    - Fuck of
+    - BS
+    - bs
+    - You are full of bs
+    - you are full of BS
+    - Bullshit
+    - bullshit
+    - You are full of bullshit
+    - you are full of bullshit
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+

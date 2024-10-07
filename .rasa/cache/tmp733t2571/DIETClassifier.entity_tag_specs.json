@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-genre",
+      "2": "I-genre",
+      "3": "L-genre",
+      "4": "U-genre",
+      "5": "B-release_year",
+      "6": "I-release_year",
+      "7": "L-release_year",
+      "8": "U-release_year",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-genre": 1,
+      "I-genre": 2,
+      "L-genre": 3,
+      "U-genre": 4,
+      "B-release_year": 5,
+      "I-release_year": 6,
+      "L-release_year": 7,
+      "U-release_year": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

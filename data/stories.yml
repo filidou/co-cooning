@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: recommend a movie
+  steps:
+  - intent: ask_movie_recommendation
+  - action: movie_recommendation_form
+  - active_loop: movie_recommendation_form
+  - slot_was_set:
+    - movie_genre: action
+  - slot_was_set:
+    - release_year: 2020
+  - active_loop: null
+  - action: action_recommend_movie
+
+- story: recommend a series
+  steps:
+  - intent: ask_series_recommendation
+  - action: series_recommendation_form
+  - active_loop: series_recommendation_form
+  - slot_was_set:
+    - series_genre: drama
+  - slot_was_set:
+    - release_year: 2021
+  - active_loop: null
+  - action: action_recommend_series
+
+
+## addition
+- story: sad path wwith rage
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge_response
+  - intent: bot_challenge
+  - action: utter_rage
+  - action: utter_goodbye
+
+- story: sad path gone movie
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge_response
+  - intent: ask_movie_recommendation
+  - action: movie_recommendation_form
+  - active_loop: movie_recommendation_form
+  - slot_was_set:
+    - movie_genre: action
+  - slot_was_set:
+    - release_year: 2020
+  - active_loop: null
+  - action: action_recommend_movie
+
+- story: sad path gone series
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge_response
+  - intent: ask_series_recommendation
+  - action: series_recommendation_form
+  - active_loop: series_recommendation_form
+  - slot_was_set:
+    - series_genre: drama
+  - slot_was_set:
+    - release_year: 2021
+  - active_loop: null
+  - action: action_recommend_series

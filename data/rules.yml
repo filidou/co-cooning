@@ -1,0 +1,30 @@
+version: "3.1"
+
+rules:
+
+# - rule: Respond to bot challenge (single-turn)
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_bot_challenge_response
+
+- rule: Activate movie recommendation form
+  steps:
+  - intent: ask_movie_recommendation
+  - action: movie_recommendation_form
+  - active_loop: movie_recommendation_form
+
+- rule: Activate series recommendation form
+  steps:
+  - intent: ask_series_recommendation
+  - action: series_recommendation_form
+  - active_loop: series_recommendation_form
+
+- rule: Greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
