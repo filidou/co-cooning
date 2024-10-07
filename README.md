@@ -113,9 +113,9 @@ Series scenario with challenge:
 - User’s input (are you a human) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?                                                                                          - User’s input (series) > series scenario
 
 No match found
-Your input (i want to watch a tv series) > What genre of TV series do you prefer?
-Your input (sci-fi) > What is yor preferred release year ?
-Your input (2001) > Sorry, I couldn't find a TV series recommendation at the moment.
+- Your input (i want to watch a tv series) > What genre of TV series do you prefer?
+- Your input (sci-fi) > What is yor preferred release year ?
+- Your input (2001) > Sorry, I couldn't find a TV series recommendation at the moment.
 
 ## Challenges
 Throughout the development of Co-cooning, I encountered several challenges that tested the bot's design and functionality. One significant hurdle was implementing a "sad path" story that included an utter rage response. This approach ran into issues due to contradictions between the defined stories and the rules governing the chatbot's behavior. The conflicting interactions created confusion in the flow, making it difficult for the bot to respond appropriately. 
