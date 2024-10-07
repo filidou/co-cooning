@@ -98,13 +98,15 @@ Implementing the solution for the policy was particularly challenging. It requir
 
 ## Test cases
 Movies scenario: 
-- User’s input (hi) > Hello Co-cooning is here for you! How can I assist you in finding a movie or TV series? User’s input (movie) > What genre of movies do you prefer?
+- User’s input (hi) > Hello Co-cooning is here for you! How can I assist you in finding a movie or TV series?
+- User’s input (movie) > What genre of movies do you prefer?
 - User’s input (drama)> What is yor preferred release year ?                                                            - User’s input (2002)> I recommend you watch Drama Queen. It's a Drama movie from 2002, rated 3.2 on IMDb!              - User’s input (bye)> Goodbye and always remember: Get Cozy, Cocoon Up, and Press Play!
 Series scenario: 
 - User’s input (good morning)> Hello Co-cooning is here for you! How can I assist you in finding a movie or TV series?  - User’s input (series) > What genre of series do you prefer?
 - User’s input (drama)> What is yor preferred release year ?                                                            - User’s input (2010)> I recommend you watch Total Drama World Tour. It's a Drama series from 2010–, rated N/A on IMDb!
 Challenge scenario: 
-- User’s input (are you a bot) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?                           - User’s input (fu) > I may be just a bot, but challenging me was a mistake. No movies or series for you. Prepare to face my wrath!
+- User’s input (are you a bot) > No I am a greenscreen, like those they have in the studios. Do you want me to recommend a movie or a series?
+- User’s input (fu) > I may be just a bot, but challenging me was a mistake. No movies or series for you. Prepare to face my wrath!
 Goodbye and always remember: Get Cozy, Cocoon Up, and Press Play!
 
 Movies scenario with challenge: 
